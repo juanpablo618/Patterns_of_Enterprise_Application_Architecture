@@ -1,0 +1,39 @@
+Resumen Patterns_of_Enterprise_Application_Architecture
+
+
+Introduction
+
+building computer systems is hard. As the complexity of the system gets greater, the task of building the 
+software gets exponentially harder. As in any profession, we can progress only by learning, both
+from our mistakes and from our successes.
+
+Definition of architecture:
+
+There are two common elements: One is the highest-level breakdown of a
+system into its parts; the other, decisions that are hard to change. It’s also
+increasingly realized that there isn’t just one way to state a system’s architecture; rather, there are multiple architectures in a system, and the view of what is
+architecturally significant is one that can change over a system’s lifetime.
+
+I’ll start with examples. Enterprise applications include payroll, patient
+records, shipping tracking, cost analysis, credit scoring, insurance, supply
+chain, accounting, customer service, and foreign exchange trading. 
+
+Enterprise applications usually involve PERSISTENT DATA and other thing is that usually many people access data concurrently
+and it involves a "lot of user interface screens" to handle it.
+
+Enterprise applications rarely live on an island. Usually they need to integrate with other enterprise applications
+scattered around the enterprise.
+
+Then there’s the matter of what comes under the term “business logic.” I
+find this a curious term because there are few things that are less logical than
+business logic. When you build an operating system you strive to keep the
+whole thing logical. But business rules are just given to you, and without major
+political effort there’s nothing you can do to change them. You have to deal
+with a haphazard array of strange conditions that often interact with each
+other in surprising ways. Of course, they got that way for a reason: Some
+salesman negotiated to have a certain yearly payment two days later than
+usual because that fit with his customer’s accounting cycle and thus won a couple of million dollars in business. A few thousand of these one-off special cases
+is what leads to the complex business “illogic” that makes business software so
+difficult. In this situation you have to organize the business logic as effectively
+as you can, because the only certain thing is that the logic will change over
+time.
